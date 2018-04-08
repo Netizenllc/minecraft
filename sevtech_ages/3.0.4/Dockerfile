@@ -18,9 +18,9 @@ USER root
 # Creating user and downloading files
 RUN useradd -m -U minecraft && \
 	mkdir -p /minecraft/world && \
-	wget --no-check-certificate https://media.forgecdn.net/files/2549/311/SevTech_Ages_Server_3.0.5.zip && \
-	unzip SevTech_Ages_Server_3.0.5.zip && \
-	rm SevTech_Ages_Server_3.0.5.zip && \
+	wget --no-check-certificate https://media.forgecdn.net/files/2547/513/SevTech_Ages_Server_3.0.4.zip && \
+	unzip SevTech_Ages_Server_3.0.4.zip && \
+	rm SevTech_Ages_Server_3.0.4.zip && \
 	chmod u+x Install.sh ServerStart.sh && \
 	echo "#By changing the setting below to TRUE you are indicating your agreement to our EULA (https://account.mojang.com/documents/minecraft_eula)." > eula.txt && \
 	echo "$(date)" >> eula.txt && \
